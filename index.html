@@ -21,8 +21,8 @@
 
         body {
             width: 100vw;
-            background:#121212;
             height: 100vh;
+            background-color: #121212;
         }
 
         .cards {
@@ -30,7 +30,7 @@
             display:flex;
             flex-wrap: wrap;
             justify-content: center;
-           gap:10px;
+           
            flex-wrap: wrap;
             overflow: hidden;
           
@@ -42,7 +42,7 @@
             margin-bottom: 5%;
             width: 200px;
             height: 300px;
-          
+            margin-left: 3%;
             border: 1px solid;
             overflow: hidden;
             display: inline-block;
@@ -65,17 +65,27 @@
 
         }
 
-        .carousel img {
-            height: 100px;
-
-        }
+     
 
         .carousel {
 
             box-shadow: 15px 15px 50px;
             height: 60%;
+            width: 100%;
             background-size: cover;
             overflow: hidden;
+        }
+        .carousel-inner{
+            height: 100%;
+            width: 100%;
+        }
+        .carousel-item{
+            height: 100%;
+            width: 100%;
+        }
+        .carousel-item img{
+            height: 100%;
+            width: 100%;
         }
         h1{
             animation:change 2s infinite;
@@ -160,21 +170,21 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://source.unsplash.com/random/?coding" class="d-block w-100" alt="..."
-                    style="height: 20%;">
+                    >
             </div>
             <div class="carousel-item">
                 <img src="https://source.unsplash.com/random?hackathons" class="d-block w-10" alt="..."
-                    style="height: 20%;">
+                   >
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/random?cpu" class="d-block w-100" alt="..." style="height: 20%;">
+                <img src="https://source.unsplash.com/random?cpu" class="d-block w-100" alt="..." >
             </div>
             <div class="carousel-item">
                 <img src="https://source.unsplash.com/random?javascript" class="d-block w-100" alt="..."
-                    style="height: 20%;">
+                    >
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/random?c++" class="d-block w-100" alt="..." style="height:20%;">
+                <img src="https://source.unsplash.com/random?c++" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
